@@ -1,0 +1,21 @@
+/*
+ * Deck theme overrides, on top of themes/neutral.css + themes/light.css:
+ * pure white stage, near-black ink, higher-contrast accents — and bigger eyebrows.
+ */
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --ink: #000000;
+  --ink-2: rgba(0, 0, 0, 0.85);
+  --ink-3: rgba(0, 0, 0, 0.58);
+  --hair: rgba(0, 0, 0, 0.18);
+  --hair-strong: rgba(0, 0, 0, 0.30);
+
+  --accent: #1d4ed8;
+  --accent-strong: #1739ad;
+  --ok: #15803d;
+  --warning: #b45309;
+  --fault: #dc2626;
+}
+
+.t-eyebrow { font-size: 28px; }
