@@ -2,7 +2,7 @@
   "name": "tu-ci-esta-perdiendo-el-tiempo",
   "private": true,
   "version": "0.1.0",
-  "description": "Tu CI está perdiendo el tiempo",
+  "description": "Tu CI est\u00e1 perdiendo el tiempo",
   "author": "Federico Mon",
   "type": "module",
   "scripts": {
@@ -13,7 +13,8 @@
     "verify": "node scripts/verify.mjs dist artifacts/verify",
     "shot": "node scripts/shot.mjs",
     "upgrade": "node scripts/upgrade.mjs",
-    "typecheck": "tsc --noEmit -p ."
+    "typecheck": "tsc --noEmit -p .",
+    "deploy": "sh scripts/deploy-pages.sh"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.3.0",
