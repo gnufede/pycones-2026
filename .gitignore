@@ -6,3 +6,8 @@ artifacts/
 .DS_Store
 .beatdeck-backup/
 *.beatdeck-new
+
+# demos: sqlalchemy checkouts, caches and bytecode
+__pycache__/
+.cache/
+*.py[cod]

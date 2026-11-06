@@ -23,8 +23,9 @@
 
 Automatic beats: **1.2 boot** (`pytest -q` types itself, ~1.5 s, then the title lands).
 
-The demo in scene 7 runs outside the deck: `hatch test -vv` on the
-`pycones2025-visualiza-lo-invisible` repo (same demo as the reveal.js deck).
+The demo in scene 7 runs outside the deck, from `demos/` in this repo (see `demos/README.md`):
+`python3 demos/demo_cov/sqlalchemy_cov_demo.py` · `demo_filemon` · `demo_mortadelo` —
+each bootstraps a SQLAlchemy checkout and venv on first run (needs git, Python 3.12+ and network once).
 
 ## If something goes wrong
 
