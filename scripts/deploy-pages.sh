@@ -5,7 +5,7 @@ set -e
 
 npm run build
 
-git fetch origin gh-pages 2>/dev/null || true
+git fetch origin gh-pages 2>/dev/null && git branch -f gh-pages FETCH_HEAD 2>/dev/null || true
 
 TMP=$(mktemp -d)
 if git show-ref --verify --quiet refs/heads/gh-pages; then
