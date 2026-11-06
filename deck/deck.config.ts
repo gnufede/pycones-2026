@@ -10,7 +10,7 @@ export const config = {
   /** Typed on the standby screen, then the title lands. */
   boot: 'pytest -q',
   /** Destination of the QR on the closing screen. "TODO" = no QR (the presenter view warns). Never guess it. */
-  qrUrl: 'https://github.com/gnufede/pycones-2026',
+  qrUrl: 'https://gnufede.github.io/pycones-2026/',
   /** Shown under the QR. */
-  qrLabel: 'github.com/gnufede/pycones-2026',
+  qrLabel: 'gnufede.github.io/pycones-2026',
 } as const;

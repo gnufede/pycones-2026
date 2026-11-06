@@ -1,4 +1,4 @@
-import { QR, Reveal, Scene, qrConfigured, useScene } from 'beatdeck';
+import { Reveal, Scene, useScene } from 'beatdeck';
 import { config } from '../deck.config';
 
 const SUMMARY = [
@@ -16,7 +16,6 @@ const BEYOND: [string, string][] = [
 function End_() {
   const { here, b } = useScene();
   const at = (n: number) => here && b >= n;
-  const qr = qrConfigured(config.qrUrl);
   return (
     <>
       {/* 08.1 summary */}
@@ -58,17 +57,9 @@ function End_() {
           <div className="t-meta" style={{ fontSize: 26 }}>{config.author}</div>
         </Reveal>
       )}
-      {qr && (
-        <Reveal on={at(2)} x={1440} y={330} delay={500}>
-          <QR url={config.qrUrl} size={320} />
-          {config.qrLabel && (
-            <div className="t-meta" style={{ fontSize: 18, marginTop: 24, width: 320, textAlign: 'center', textTransform: 'none', letterSpacing: '0.02em' }}>{config.qrLabel}</div>
-          )}
-        </Reveal>
-      )}
     </>
   );
 }
 
-/** 08 END — summary, what else coverage ∩ git diff is good for, and thanks. */
+/** 08 END — summary, what else coverage ∩ git diff is good for, and thanks (no QR: it is on the title). */
 export const End = () => <Scene index={7}><End_ /></Scene>;

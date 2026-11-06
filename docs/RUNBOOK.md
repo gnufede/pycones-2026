@@ -36,8 +36,8 @@ The demo in scene 7 runs outside the deck: `hatch test -vv` on the
 
 ## Config to check on the day
 
-`deck/deck.config.ts`: title, speaker, `qrUrl` (currently: **TODO** — candidates: the pytest-filemon or
-pytest-mortadelo repos). Rebuild after editing.
+`deck/deck.config.ts`: title, speaker, `qrUrl` (currently: **https://gnufede.github.io/pycones-2026/** — the live
+deck; the QR is on the title slide). Rebuild after editing.
 
 ## Verify
 
