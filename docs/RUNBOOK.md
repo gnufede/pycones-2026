@@ -7,7 +7,7 @@
 2. Wi-Fi can be off. No request leaves the machine.
 3. Projector at 1920×1080 if possible; any other ratio gets black bars, never distortion.
 4. Press **P** to open the presenter window; drag it to your screen. It must say "stage connected".
-5. Click the stage window, press **F** for fullscreen. You are on 1.1 (standby).
+5. Click the stage window, press **F** for fullscreen. You are on 1.1 (the QR standby — people can scan it while sitting down).
 
 ## During the talk
 

@@ -11,7 +11,8 @@ function Open_() {
   const { here, b } = useScene();
   const typed = useDeck((s: DeckState<Live>) => s.live.typed);
   const dots = useDeck((s: DeckState<Live>) => s.live.dots);
-  const term = here && b <= 1;
+  const term = here && b === 1;
+  const qrStandby = here && b === 0;
   const title = here && b === 2;
   const about = here && b === 3;
 
@@ -33,7 +34,13 @@ function Open_() {
 
   return (
     <>
-      {/* 01.1–01.2 the terminal: a quiet prompt, the typed command, then pytest dots */}
+      {/* 01.1 the QR standby: scannable while people sit down, before the talk starts */}
+      <Reveal on={qrStandby} out={here && b > 0} x={710} y={230} delay={300}>
+        <QR url={config.qrUrl} size={500} />
+        <div className="mono" style={{ fontSize: 26, marginTop: 40, width: 500, textAlign: 'center', color: 'var(--ink-2)' }}>{config.qrLabel}</div>
+      </Reveal>
+
+      {/* 01.2 the terminal: the typed command, then pytest dots */}
       <div style={{
         position: 'absolute', left: PAD_X, top: TOP, width: 1920 - 2 * PAD_X,
         opacity: term ? 1 : 0, transition: 'opacity 300ms',

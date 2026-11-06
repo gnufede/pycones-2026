@@ -8,7 +8,7 @@ export const SCENES: SceneDef[] = [
   {
     id: '01', title: 'OPEN',
     beats: [
-      { name: 'standby', note: 'Pantalla en negro mientras entra la gente. Un click arranca la charla.' },
+      { name: 'qr', ref: 'adaptation (speaker request)', source: 'the live deck QR — gnufede.github.io/pycones-2026', note: 'Pantalla de espera con el QR del deck en vivo, escaneable antes de empezar. Un click arranca la charla.' },
       { name: 'boot', auto: true, note: 'Automático: se teclea pytest y llega el título.', ref: 'adaptation' },
       { name: 'title', ref: 'slide 1', source: 'Tu CI está perdiendo el tiempo (y la TIA lo sabe) — Federico Mon - PyConES 2026', note: 'QR al deck en vivo (gnufede.github.io/pycones-2026)' },
       { name: 'about me', ref: 'speaker', source: 'Federico Mon · @gnufede · Test Optimization @ DataDog · GitHub avatar' },
