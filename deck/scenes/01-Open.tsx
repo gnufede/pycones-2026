@@ -23,7 +23,10 @@ function Open_() {
   const buffer: React.ReactNode[] = [
     <span key="cmd">
       <span style={{ color: 'var(--accent)' }}>$</span> {cmd.slice(0, typed)}
-      {dots === 0 && <span className="cursor">_</span>}
+      {dots === 0 && <span className="cursor" style={{
+        display: 'inline-block', width: 18, height: 36, marginLeft: 3,
+        background: 'var(--ink)', verticalAlign: 'text-bottom',
+      }} />}
     </span>,
   ];
   const full = Math.floor(dots / BOOT.cols);
